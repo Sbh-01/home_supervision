@@ -1,0 +1,189 @@
+# Home Supervision
+
+A home supervision platform that connects homeowners with trusted professionals who oversee household services on their behalf, ensuring quality, transparency, and accountability even when homeowners are unavailable.
+
+## About the Project
+
+Home Supervision is designed to help homeowners manage and monitor household work when they cannot be physically present.
+
+The platform allows consumers to request a supervisor who visits their home, oversees the work being performed by other service professionals, and helps ensure that the work is carried out according to the homeowner's expectations.
+
+### Key Objectives
+
+- **Reliable Supervision:** Connect homeowners with supervisors who can oversee household work.
+- **Transparency:** Help homeowners stay informed about the progress of work.
+- **Accountability:** Establish a clear supervision process.
+- **Convenience:** Reduce the need for homeowners to be physically present.
+- **Trust:** Create a more dependable experience for managing household services.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend development |
+| Node.js | Backend runtime |
+| Express.js | Backend framework and API development |
+| MySQL | Relational database |
+| Prisma ORM | Database access and schema management |
+| JavaScript | Application development |
+
+## Project Structure
+
+```text
+Home-Supervision/
+│
+├── frontend/
+│   └── React application
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── prisma/
+│   ├── generated/
+│   ├── .env
+│   └── server.js
+│
+├── .gitignore
+└── README.md
+```
+
+*The structure may change as development progresses.*
+
+## Current Features
+
+- User registration
+- Secure password hashing
+- Role-based user structure
+- REST API using Express.js
+- MySQL database integration
+- Prisma ORM integration
+
+## Getting Started
+
+### Prerequisites
+
+Install the following tools:
+
+- Node.js
+- npm
+- MySQL
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sbh-01/home-supervision.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd home-supervision
+```
+
+### 3. Set Up the Backend
+
+```bash
+cd backend
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the backend directory.
+
+```env
+PORT=5000
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_NAME=home_supervision
+```
+
+Use your own local database credentials. Never commit your `.env` file.
+
+### 5. Set Up the Database
+
+Configure Prisma and your database connection, then run the appropriate migration command for your project.
+
+```bash
+npx prisma migrate dev
+npx prisma generate
+```
+
+### 6. Start the Backend
+
+```bash
+npm run dev
+```
+
+The backend will run at:
+
+```text
+http://localhost:5000
+```
+
+### 7. Start the Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Use the frontend start command configured in your `package.json`. If your project uses a different script, adjust the command accordingly.
+
+## API
+
+### Authentication
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/auth/register` | Register a new user |
+
+More endpoints will be documented as the application develops.
+
+## Future Enhancements
+
+- User login and authentication
+- Supervisor profiles
+- Service requests and booking management
+- Location-based supervisor discovery
+- Real-time work progress updates
+- Reviews and ratings
+- Notifications
+- Payment integration
+- Administrative dashboard
+
+## Security
+
+- Passwords are hashed before storage.
+- Environment variables are used for sensitive configuration.
+- Database access is managed through Prisma.
+- Additional authentication and authorization protections will be added as development progresses.
+
+## Contribution
+
+Contributions and suggestions are welcome.
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Commit your changes.
+5. Submit a pull request.
+
+## License
+
+This project is currently under development. A license will be added when the licensing decision is finalized.
+
+---
+
+**Home Supervision**
+
+*Making household management more transparent, reliable, and convenient.*
+
+**GitHub:** [Sbh-01](https://github.com/Sbh-01)  
+**Repository:** [home-supervision](https://github.com/Sbh-01/home-supervision)
